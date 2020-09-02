@@ -1,5 +1,5 @@
 # This is the main source file list we're building
-SRC    = main.c
+SRC    = main.c objspace.c
 # This tells Make that our object filenames should be the same as the src
 # filenames but with .c replaced with .o
 OBJ    = $(SRC:.c=.o)
