@@ -31,3 +31,6 @@ $(EXE): $(OBJ)
 # Clean Up Objects, Exectuables, Dumps out of source directory
 clean:
 	$(RM) -r $(OBJ) $(OBJ).dSYM $(EXE)
+
+lldb: $(EXE)
+	lldb $(EXE)
